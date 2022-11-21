@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 USER root
 
+RUN apt update && apt upgrade
+
 RUN apt install python3
 
 CMD python3 --version
