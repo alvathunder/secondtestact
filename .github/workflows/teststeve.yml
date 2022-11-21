@@ -18,7 +18,7 @@ jobs:
         MY_NAME: Alva
       run: | 
         echo Hello, $MY_NAME
-        echo Your name is, drum roll, $MY_NAME
+        echo Your name is, drum rolls please, $MY_NAME
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
