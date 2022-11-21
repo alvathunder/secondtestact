@@ -1,10 +1,12 @@
 FROM ubuntu:latest
 
-RUN sudo apt install python3 py3-pip
+USER root
+
+RUN apt install python3 py3-pip
 
 CMD python3 --version
 
-RUN sudo apt install bash-completion
+RUN apt install bash-completion
 
 ENV PORT 8080
 
@@ -14,18 +16,11 @@ COPY . .
 
 WORKDIR /app
 
-USER root
-
 RUN sudo chmod +x scripts.sh
 
 ENTRYPOINT ["sh", "./scripts.sh]
 
 #ENTRYPOINT ["python", "steve.py"]
-
-
-
-
-
 
 # ENTRYPOINT ["sh","/app/script.sh"]
 
