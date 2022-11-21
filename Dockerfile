@@ -1,10 +1,10 @@
 FROM ubuntu:latest
 
-RUN apt add --no-cache python3 py3-pip
+RUN sudo apt install python3 py3-pip
 
 CMD python3 --version
 
-RUN apt add --no-cache --upgrade bash
+RUN sudo apt install bash-completion
 
 ENV PORT 8080
 
@@ -16,7 +16,7 @@ WORKDIR /app
 
 USER root
 
-RUN chmod +x scripts.sh
+RUN sudo chmod +x scripts.sh
 
 ENTRYPOINT ["sh", "./scripts.sh]
 
