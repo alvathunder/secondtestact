@@ -26,7 +26,7 @@ jobs:
     
     - name: execute py script
       run: | 
-        python ./steve.py
+        python app/steve.py
         
     - name: Building docker image
       uses: mr-smithers-excellent/docker-build-push@v4
