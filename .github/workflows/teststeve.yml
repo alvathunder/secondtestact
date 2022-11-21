@@ -30,8 +30,8 @@ jobs:
     
     - name: execute sh script
       run: |
-         chmod +x ./app/script.sh
-         ./app/script.sh
+         chmod +x ./app/scripts.sh
+         ./app/scripts.sh
       shell: bash
         
     - name: Building docker image
