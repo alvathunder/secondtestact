@@ -8,7 +8,7 @@ EXPOSE 8080
 
 COPY . . 
 
-WORKDIR ./steve.py
+WORKDIR /app
 
 ENTRYPOINT ["python", "steve.py"]
 
