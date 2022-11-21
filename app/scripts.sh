@@ -1,7 +1,7 @@
 #!/bin/sh
 
-apt update
-apt upgrade 
-apt install aws-cli
+sudo apt update
+sudo apt upgrade
+sudo apt install aws-cli
 aws --version
 
