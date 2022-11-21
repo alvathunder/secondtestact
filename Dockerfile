@@ -10,7 +10,9 @@ COPY . .
 
 WORKDIR /app
 
-ENTRYPOINT ["python", "steve.py"]
+ENTRYPOINT ["npm", "start"]
+
+#ENTRYPOINT ["python", "steve.py"]
 
 
 
