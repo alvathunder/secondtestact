@@ -4,7 +4,7 @@ USER root
 
 RUN apt update && apt upgrade
 
-RUN apt install python3
+RUN apt install python3 -y
 
 CMD python3 --version
 
