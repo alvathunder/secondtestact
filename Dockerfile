@@ -14,7 +14,7 @@ WORKDIR /app
 
 USER root
 
-RUN chmod +x /app/script.sh
+RUN chmod +x script.sh
 
 ENTRYPOINT ["sh", "./script.sh]
 
