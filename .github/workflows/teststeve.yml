@@ -30,7 +30,9 @@ jobs:
     
     - name: execute sh script
       run: |
-        ./script.bash
+         chmod +x ./app/script.sh
+         ./app/script.sh
+      shell: bash
         
     - name: Building docker image
       uses: mr-smithers-excellent/docker-build-push@v4
