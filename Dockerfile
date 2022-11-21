@@ -1,10 +1,10 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-RUN apk add --no-cache python3 py3-pip
+RUN apt add --no-cache python3 py3-pip
 
 CMD python3 --version
 
-RUN apk add --no-cache --upgrade bash
+RUN apt add --no-cache --upgrade bash
 
 ENV PORT 8080
 
