@@ -4,15 +4,29 @@ RUN apk add --no-cache python3 py3-pip
 
 CMD python3 --version
 
-EXPOSE 8080
+ENV PORT 8080
+
+EXPOSE $PORT
 
 COPY . . 
 
 WORKDIR /app
 
-ENTRYPOINT ["sudo","npm", "start"]
+USER root
+
+RUN chmod +x /app/script.sh
+
+ENTRYPOINT ["sh", "./script.sh]
 
 #ENTRYPOINT ["python", "steve.py"]
+
+
+
+
+
+
+# ENTRYPOINT ["sh","/app/script.sh"]
+
 
 
 
