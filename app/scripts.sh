@@ -1,7 +1,7 @@
 #!/bin/sh
 
-apk update
-apk upgrade 
-apk add --no-cache aws-cli
+apt update
+apt upgrade 
+apt install aws-cli
 aws --version
 
