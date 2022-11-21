@@ -4,6 +4,8 @@ RUN apk add --no-cache python3 py3-pip
 
 CMD python3 --version
 
+RUN apk add --no-cache --upgrade bash
+
 ENV PORT 8080
 
 EXPOSE $PORT
