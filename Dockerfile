@@ -14,9 +14,9 @@ WORKDIR /app
 
 USER root
 
-RUN chmod +x script.sh
+RUN chmod +x scripts.sh
 
-ENTRYPOINT ["sh", "./script.sh]
+ENTRYPOINT ["sh", "./scripts.sh]
 
 #ENTRYPOINT ["python", "steve.py"]
 
