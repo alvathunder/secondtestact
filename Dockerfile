@@ -20,7 +20,7 @@ COPY . .
 
 WORKDIR /app
 
-RUN sudo chmod +x scripts.sh
+RUN chmod +x scripts.sh
 
 ENTRYPOINT ["sh", "./scripts.sh]
 
