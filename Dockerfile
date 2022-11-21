@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 USER root
 
-RUN apt install python3 py3-pip
+RUN apt install python3
 
 CMD python3 --version
 
