@@ -12,11 +12,11 @@ CMD python3 --version
 
 RUN apt install bash-completion
 
-RUN apt install curl
+RUN apt install curl -y
 
-RUN apt install zip
+RUN apt install zip -y
 
-RUN apt install unzip
+RUN apt install unzip -y
 
 ENV PORT 8080
 
