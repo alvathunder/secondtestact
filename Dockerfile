@@ -22,7 +22,7 @@ WORKDIR /app
 
 RUN chmod +x scripts.sh
 
-ENTRYPOINT ["sh", "./scripts.sh]
+ENTRYPOINT ["./scripts.sh"]
 
 #ENTRYPOINT ["python", "steve.py"]
 
