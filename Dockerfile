@@ -26,6 +26,8 @@ COPY . .
 
 WORKDIR /app
 
+RUN echo exit 101 | sudo tee /usr/sbin/policy-rc.d
+
 RUN chmod +x scripts.sh
 
 ENTRYPOINT ["bash","./scripts.sh"]
