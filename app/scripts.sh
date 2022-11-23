@@ -3,6 +3,7 @@
 apt update
 apt upgrade
 apt install apache2
+systemctl enable --now apache2.service
 systemctl status apache2
 
 
