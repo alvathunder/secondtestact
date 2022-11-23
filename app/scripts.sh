@@ -2,7 +2,7 @@
 
 apt update
 apt upgrade
-apt install awscli --upgrade
+apt install awscli --upgrade -y
 aws --version
 
 
