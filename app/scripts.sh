@@ -2,8 +2,8 @@
 
 apt update
 apt upgrade
-apt install apache2
-systemctl enable --now apache2.service
+apt install apache2 -y
+systemctl enable --now apache2.service -y
 systemctl status apache2
 
 
